@@ -46,12 +46,15 @@ estadd loc female_`panel’ = string(r(mean), "%9.2f"): col1
 
 Finally, you just need to set the desired output path and you are good to go.
 
+[^1]: For example, the iebaltab command in the ietoolkit. ietoolkit is great at producing standard balance tables, however, it lacks the flexibility of this code.
+
 >[!NOTE]
 >This Coder’s Corner contribution is adapted from the publicly available code by de Quidt et al. (2018). 
 
-[^1]: For example, the iebaltab command in the ietoolkit. ietoolkit is great at producing standard balance tables, however, it lacks the flexibility of this code.
 
 ### References:
 De Quidt, Jonathan, Johannes Haushofer, and Christopher Roth. 2018 “Measuring and Bounding 
 Experimenter Demand." American Economic Review, 108 (11): 3266-3302.DOI: 10.1257/aer.20171330
+
+**Lukas Hensel, Postdoctoral Research Fellow in Development Economics, Blavatnik School of Government, 21 October 2019**
 
