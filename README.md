@@ -46,8 +46,8 @@ estadd loc female_`panel’ = string(r(mean), "%9.2f"): col1
 
 Finally, you just need to set the desired output path and you are good to go.
 
-[!NOTE]
-This Coder’s Corner contribution is adapted from the publicly available code by de Quidt et al. (2018). 
+>[!NOTE]
+>This Coder’s Corner contribution is adapted from the publicly available code by de Quidt et al. (2018). 
 
 [^1]: For example, the iebaltab command in the ietoolkit. ietoolkit is great at producing standard balance tables, however, it lacks the flexibility of this code.
 
