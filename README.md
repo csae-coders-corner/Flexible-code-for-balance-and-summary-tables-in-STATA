@@ -1,3 +1,6 @@
+
+![CC Graphics 2024_BalanceandSummary](https://github.com/csae-coders-corner/Flexible-code-for-balance-and-summary-tables-in-STATA/assets/148211163/68a2a6cd-be36-4140-8fbf-3085ccd82b40)
+
 # Flexible-code-for-balance-and-summary-tables-in-STATA
 Most empirical research papers (and thesis) contain tables with summary statistics. Similarly, research using randomized controlled trials will need to show balance tables to convince readers of the successful randomization. There are standardized tools to produce these tables, however, they often lack the flexibility.[^1] However, the exact formatting requirements vary with data structure and RCT design. 
 
