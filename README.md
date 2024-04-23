@@ -14,7 +14,7 @@ The template do-file produces the balance table above, but it can easily be adju
 
 1. Make sure that all variables are labelled with the text you want to appear in the table. Here is a quick reminder of the code:
 
-label var female "Female"
+`label var female "Female"`
 
 2.	Create variables indicating empty lines and panel headings. It creates empty variables with an empty label.
 For empty lines use the following code:
