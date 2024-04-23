@@ -19,33 +19,40 @@ The template do-file produces the balance table above, but it can easily be adju
 2.	Create variables indicating empty lines and panel headings. It creates empty variables with an empty label.
 For empty lines use the following code:
 
+```
 gen empt=.
 label var empt " "
-
+```
 For panel headings lines use the following code. It creates empty variables with labels (note that you can use LATEX code in labels).
 
+```
 gen pana = .
 label var pana "\textbf{Panel A: Pooled} \\"
+```
 
 3.	Define a local foreach panel that contains all variables in the desired order.
 
+```
 loc covars_pana "female age exp vocational university"
 loc covars_panb " age exp vocational university"
+```
 
 4.	Choose number of columns in table and set local accordingly.
 
-local number_columns = 5
+`local number_columns = 5`
 
 5.	Define columns headings in a local (note the need for LATEX code in the headings).
 
-loc colnames ""Treatment mean" "Control mean" "$\Delta$" "p-value(T=C)" "\# obs" "
+`loc colnames ""Treatment mean" "Control mean" "$\Delta$" "p-value(T=C)" "\# obs" "`
 
 6.	Add desired statistics to the regression results. For the complete code refer to the do-file, which contains code for a loop over all variables in a given panel and shows how to add content only to specific columns (here the number of observations with treatment assignment).
 
 The code crucially relies on the “estadd” command which allows you to add any string or number to a set of regression results. The do-file contains a variety of examples of how to add summary statistics, strings, and p-values. The following code adds the treatment group mean of the variable “female” to the estimation results col1 (column 1) displaying 2 decimal digits (%9.2f). The result can be accessed using the name “female_`panel’” (the “panel” local is set at the beginning of each panel).
 
+```
 qui sum female if treatment ==1
 estadd loc female_`panel’ = string(r(mean), "%9.2f"): col1
+```
 
 Finally, you just need to set the desired output path and you are good to go.
 
